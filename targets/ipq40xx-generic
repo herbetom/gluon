@@ -25,6 +25,13 @@ device('aruba-ap-365', 'aruba_ap-365', {
 })
 
 
+-- ASUS
+
+device('asus-map-ac2200', 'asus_map-ac2200', {
+	factory = false,
+})
+
+
 -- AVM
 
 device('avm-fritz-box-4040', 'avm_fritzbox-4040', {

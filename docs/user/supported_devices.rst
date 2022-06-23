@@ -157,6 +157,10 @@ ipq40xx-generic
   - Instant On AP11D
   - Instant On AP17
 
+* ASUS
+
+  - Lyra (MAP-AC2200)
+
 * AVM
 
   - FRITZ!Box 4040 [#avmflash]_
