@@ -331,8 +331,8 @@ The user-intent is preserved within Gluon’s implemented functionality
 (Wired-Mesh / Client access / WAN).
 
 As an additional feature, Gluon now supports assigning roles to
-interfaces. This behavior is explained here –>
-https://github.com/freifunk-gluon/gluon/pull/2584/files
+interfaces. This behavior is explained
+:ref:`here<wired-mesh-commandline>`.
 
 Site changes
 ------------
