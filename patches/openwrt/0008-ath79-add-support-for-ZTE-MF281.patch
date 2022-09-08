@@ -62,7 +62,7 @@ Signed-off-by: David Bauer <mail@david-bauer.net>
 
 diff --git a/target/linux/ath79/dts/qca9563_zte_mf281.dts b/target/linux/ath79/dts/qca9563_zte_mf281.dts
 new file mode 100644
-index 0000000000000000000000000000000000000000..6ebf3ea1d83b91515d0a260d069669ad90cb97f6
+index 0000000000000000000000000000000000000000..ed4f0ef9d1053a1531cbd8ef13c744b5bcf0d564
 --- /dev/null
 +++ b/target/linux/ath79/dts/qca9563_zte_mf281.dts
 @@ -0,0 +1,275 @@
