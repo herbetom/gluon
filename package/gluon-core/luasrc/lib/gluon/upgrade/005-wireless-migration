@@ -7,6 +7,7 @@ local uci = require('simple-uci').cursor()
 uci:foreach('wireless', 'wifi-device', function(radio)
 	local radio_name = radio['.name']
 	local hwmode = radio.hwmode
+	print("debug: radio.band", radio.band)
 	if not radio.band then
 		if hwmode == '11g' or hwmode == '11ng' then
 			uci:set('wireless', radio_name, 'band', '2g')

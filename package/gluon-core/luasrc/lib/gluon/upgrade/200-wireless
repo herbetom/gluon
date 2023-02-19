@@ -122,10 +122,13 @@ local function configure_mesh(config, radio, index, suffix, disabled)
 		return
 	end
 
+	print("debug: radio: ", radio, ", index: ", index)
 	local macaddr = wireless.get_wlan_mac(uci, radio, index, 2)
+	print("debug: macaddr: ", macaddr)
 	if not macaddr then
 		return
 	end
+	print("debug: name", name)
 
 	uci:section('network', 'interface', name, {
 		proto = 'gluon_mesh',
@@ -204,6 +207,7 @@ wireless.foreach_radio(uci, function(radio, index, config)
 	uci:delete('wireless', radio_name, 'basic_rate')
 
 	local band = radio.band
+	print("debug: band", band)
 	if band == '2g' then
 		uci:set('wireless', radio_name, 'legacy_rates', false)
 		configure_mesh_wireless(radio, index, config)
