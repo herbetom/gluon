@@ -198,10 +198,6 @@ ipq40xx-generic
   - FRITZ!Box 7530 [#eva_ramboot]_ [#lan_as_wan]_
   - FRITZ!Repeater 1200 [#eva_ramboot]_
 
-* EnGenius
-
-  - ENS620EXT
-
 * GL.iNet
 
   - GL-AP1300
@@ -229,7 +225,6 @@ ipq40xx-generic
 * ZyXEL
 
   - NBG6617
-  - WRE6606  [#device-class-tiny]_
 
 ipq40xx-mikrotik
 ----------------
