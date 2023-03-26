@@ -437,6 +437,10 @@ ramips-mt76x8
 
   - VoCore2
 
+* Wavlink
+
+  - WL-WN570HA1
+
 * Xiaomi
 
   - Xiaomi Mi Router 4A (100M Edition)

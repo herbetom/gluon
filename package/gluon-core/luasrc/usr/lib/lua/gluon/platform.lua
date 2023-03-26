@@ -66,6 +66,12 @@ function M.is_outdoor_device()
 		'zyxel,nwa55axe',
 	}) then
 		return true
+
+	elseif M.match('ramips', 'mt76x8', {
+		'wavlink,wl-wn570ha1',
+	}) then
+		return true
+
 	end
 
 	return false

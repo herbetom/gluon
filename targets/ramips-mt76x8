@@ -101,9 +101,17 @@ device('tp-link-tl-wr902ac-v3', 'tplink_tl-wr902ac-v3', {
 	},
 })
 
+
 -- VoCore 2
 
 device('vocore2', 'vocore_vocore2', {
+	factory = false,
+})
+
+
+-- Wavlink
+
+device('wavlink-wl-wn570ha1', 'wavlink_wl-wn570ha1', {
 	factory = false,
 })
 
