@@ -1,0 +1,6 @@
+-- ASUS
+
+device('asus-tuf-ax4200', 'asus_tuf-ax4200', {
+	broken = true, -- case must be opened to install
+	factory = false,
+})
