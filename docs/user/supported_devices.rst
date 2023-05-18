@@ -267,6 +267,13 @@ lantiq-xway
 
   - DGN3500B [#lan_as_wan]_
 
+mediatek-filogic
+----------------
+
+* GL.iNet
+
+  - GL-MT3000
+
 mediatek-mt7622
 ---------------
 
