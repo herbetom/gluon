@@ -10,3 +10,10 @@ device('asus-tuf-ax4200', 'asus_tuf-ax4200', {
 device('cudy-wr3000-v1', 'cudy_wr3000-v1', {
 	factory = false,
 })
+
+
+-- GL.iNet
+
+device('gl.inet-gl-mt3000', 'glinet_gl-mt3000', {
+	factory = false,
+})
