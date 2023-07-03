@@ -19,3 +19,11 @@ device('cudy-wr3000-v1', 'cudy_wr3000-v1', {
 device('gl.inet-gl-mt3000', 'glinet_gl-mt3000', {
 	factory = false,
 })
+
+
+-- Netgear
+
+device('netgear-wax220', 'netgear_wax220', {
+	broken = true, -- case must be opened to install
+	factory = false,
+})
