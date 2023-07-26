@@ -27,3 +27,8 @@ device('netgear-wax220', 'netgear_wax220', {
 	broken = true, -- case must be opened to install
 	factory = false,
 })
+
+
+-- ZyXEL
+
+device('zyxel-nwa50ax-pro', 'zyxel_nwa50ax-pro')

@@ -274,6 +274,10 @@ mediatek-filogic
 
   - GL-MT3000
 
+* ZyXEL
+
+  - NWA50AX Pro
+
 mediatek-mt7622
 ---------------
 
