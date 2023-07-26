@@ -24,3 +24,8 @@ device('gl.inet-gl-mt3000', 'glinet_gl-mt3000', {
 device('netgear-wax220', 'netgear_wax220', {
 	factory = false,
 })
+
+
+-- ZyXEL
+
+device('zyxel-nwa50ax-pro', 'zyxel_nwa50ax-pro')
