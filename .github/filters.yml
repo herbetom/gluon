@@ -1,5 +1,6 @@
 {
   "ath79-generic": [
+    "contrib/docker/Dockerfile",
     "targets/ath79-generic",
     "modules",
     "Makefile",
@@ -9,6 +10,7 @@
     "targets/targets.mk"
   ],
   "ath79-nand": [
+    "contrib/docker/Dockerfile",
     "targets/ath79-nand",
     "modules",
     "Makefile",
@@ -18,6 +20,7 @@
     "targets/targets.mk"
   ],
   "ath79-mikrotik": [
+    "contrib/docker/Dockerfile",
     "targets/ath79-mikrotik",
     "modules",
     "Makefile",
@@ -28,6 +31,7 @@
     "targets/mikrotik.inc"
   ],
   "bcm27xx-bcm2708": [
+    "contrib/docker/Dockerfile",
     "targets/bcm27xx-bcm2708",
     "modules",
     "Makefile",
@@ -38,6 +42,7 @@
     "targets/bcm27xx.inc"
   ],
   "bcm27xx-bcm2709": [
+    "contrib/docker/Dockerfile",
     "targets/bcm27xx-bcm2709",
     "modules",
     "Makefile",
@@ -48,6 +53,7 @@
     "targets/bcm27xx.inc"
   ],
   "ipq40xx-generic": [
+    "contrib/docker/Dockerfile",
     "targets/ipq40xx-generic",
     "modules",
     "Makefile",
@@ -57,6 +63,7 @@
     "targets/targets.mk"
   ],
   "ipq40xx-mikrotik": [
+    "contrib/docker/Dockerfile",
     "targets/ipq40xx-mikrotik",
     "modules",
     "Makefile",
@@ -67,6 +74,7 @@
     "targets/mikrotik.inc"
   ],
   "ipq806x-generic": [
+    "contrib/docker/Dockerfile",
     "targets/ipq806x-generic",
     "modules",
     "Makefile",
@@ -76,6 +84,7 @@
     "targets/targets.mk"
   ],
   "lantiq-xrx200": [
+    "contrib/docker/Dockerfile",
     "targets/lantiq-xrx200",
     "modules",
     "Makefile",
@@ -85,6 +94,7 @@
     "targets/targets.mk"
   ],
   "lantiq-xway": [
+    "contrib/docker/Dockerfile",
     "targets/lantiq-xway",
     "modules",
     "Makefile",
@@ -94,6 +104,7 @@
     "targets/targets.mk"
   ],
   "mediatek-mt7622": [
+    "contrib/docker/Dockerfile",
     "targets/mediatek-mt7622",
     "modules",
     "Makefile",
@@ -103,6 +114,7 @@
     "targets/targets.mk"
   ],
   "mpc85xx-p1010": [
+    "contrib/docker/Dockerfile",
     "targets/mpc85xx-p1010",
     "modules",
     "Makefile",
@@ -112,6 +124,7 @@
     "targets/targets.mk"
   ],
   "mpc85xx-p1020": [
+    "contrib/docker/Dockerfile",
     "targets/mpc85xx-p1020",
     "modules",
     "Makefile",
@@ -121,6 +134,7 @@
     "targets/targets.mk"
   ],
   "ramips-mt7620": [
+    "contrib/docker/Dockerfile",
     "targets/ramips-mt7620",
     "modules",
     "Makefile",
@@ -130,6 +144,7 @@
     "targets/targets.mk"
   ],
   "ramips-mt7621": [
+    "contrib/docker/Dockerfile",
     "targets/ramips-mt7621",
     "modules",
     "Makefile",
@@ -139,6 +154,7 @@
     "targets/targets.mk"
   ],
   "ramips-mt76x8": [
+    "contrib/docker/Dockerfile",
     "targets/ramips-mt76x8",
     "modules",
     "Makefile",
@@ -148,6 +164,7 @@
     "targets/targets.mk"
   ],
   "realtek-rtl838x": [
+    "contrib/docker/Dockerfile",
     "targets/realtek-rtl838x",
     "modules",
     "Makefile",
@@ -157,6 +174,7 @@
     "targets/targets.mk"
   ],
   "rockchip-armv8": [
+    "contrib/docker/Dockerfile",
     "targets/rockchip-armv8",
     "modules",
     "Makefile",
@@ -166,6 +184,7 @@
     "targets/targets.mk"
   ],
   "sunxi-cortexa7": [
+    "contrib/docker/Dockerfile",
     "targets/sunxi-cortexa7",
     "modules",
     "Makefile",
@@ -175,6 +194,7 @@
     "targets/targets.mk"
   ],
   "x86-generic": [
+    "contrib/docker/Dockerfile",
     "targets/x86-generic",
     "modules",
     "Makefile",
@@ -185,6 +205,7 @@
     "targets/x86.inc"
   ],
   "x86-geode": [
+    "contrib/docker/Dockerfile",
     "targets/x86-geode",
     "modules",
     "Makefile",
@@ -194,6 +215,7 @@
     "targets/targets.mk"
   ],
   "x86-legacy": [
+    "contrib/docker/Dockerfile",
     "targets/x86-legacy",
     "modules",
     "Makefile",
@@ -217,6 +239,7 @@
     "package/**"
   ],
   "bcm27xx-bcm2710": [
+    "contrib/docker/Dockerfile",
     "targets/bcm27xx-bcm2710",
     "modules",
     "Makefile",
@@ -227,6 +250,7 @@
     "targets/bcm27xx.inc"
   ],
   "mvebu-cortexa9": [
+    "contrib/docker/Dockerfile",
     "targets/mvebu-cortexa9",
     "modules",
     "Makefile",
