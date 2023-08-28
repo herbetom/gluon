@@ -1,0 +1,64 @@
+From: David Bauer <mail@david-bauer.net>
+Date: Sun, 5 Jun 2022 23:43:38 +0200
+Subject: ramips-mt7621: make DSA images swconfig upgradable
+
+diff --git a/target/linux/ramips/image/mt7621.mk b/target/linux/ramips/image/mt7621.mk
+index fa4c83dbe18db3c5978c755695caf519327e89f4..2b05ebecc5a0db69fb184759549251e0f8e1d0fa 100644
+--- a/target/linux/ramips/image/mt7621.mk
++++ b/target/linux/ramips/image/mt7621.mk
+@@ -149,7 +149,6 @@ define Device/dsa-migration
+ endef
+ 
+ define Device/nand
+-  $(Device/dsa-migration)
+   BLOCKSIZE := 128k
+   KERNEL_SIZE := 4096k
+   PAGESIZE := 2048
+@@ -287,7 +286,6 @@ endef
+ TARGET_DEVICES += asus_rp-ac87
+ 
+ define Device/asus_rt-ac57u-v1
+-  $(Device/dsa-migration)
+   DEVICE_VENDOR := ASUS
+   DEVICE_MODEL := RT-AC57U
+   DEVICE_VARIANT := v1
+@@ -1616,7 +1614,6 @@ endef
+ TARGET_DEVICES += mts_wg430223
+ 
+ define Device/netgear_ex6150
+-  $(Device/dsa-migration)
+   $(Device/uimage-lzma-loader)
+   DEVICE_VENDOR := NETGEAR
+   DEVICE_MODEL := EX6150
+@@ -1803,7 +1800,6 @@ endef
+ TARGET_DEVICES += netgear_wax202
+ 
+ define Device/netgear_wndr3700-v5
+-  $(Device/dsa-migration)
+   $(Device/netgear_sercomm_nor)
+   $(Device/uimage-lzma-loader)
+   IMAGE_SIZE := 15232k
+@@ -2270,7 +2266,6 @@ endef
+ TARGET_DEVICES += tplink_tl-wpa8631p-v3
+ 
+ define Device/ubnt_edgerouter_common
+-  $(Device/dsa-migration)
+   $(Device/uimage-lzma-loader)
+   DEVICE_VENDOR := Ubiquiti
+   IMAGE_SIZE := 256768k
+@@ -2779,7 +2774,6 @@ endef
+ TARGET_DEVICES += zbtlink_zbt-wg2626
+ 
+ define Device/zbtlink_zbt-wg3526-16m
+-  $(Device/dsa-migration)
+   $(Device/uimage-lzma-loader)
+   IMAGE_SIZE := 16064k
+   DEVICE_VENDOR := Zbtlink
+@@ -2792,7 +2786,6 @@ endef
+ TARGET_DEVICES += zbtlink_zbt-wg3526-16m
+ 
+ define Device/zbtlink_zbt-wg3526-32m
+-  $(Device/dsa-migration)
+   $(Device/uimage-lzma-loader)
+   IMAGE_SIZE := 32448k
+   DEVICE_VENDOR := Zbtlink
