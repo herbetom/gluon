@@ -63,6 +63,9 @@ jobs:
           GLUON_SITE_URL: ${{ inputs.site_url || vars.GLUON_SITE_URL }}
           GLUON_SITE_BRANCH: ${{ inputs.site_branch || vars.GLUON_SITE_BRANCH }}
 
+      - name: Setup upterm session
+        uses: lhotari/action-upterm@v1
+
       - name: Build
         run: contrib/actions/run-build.sh ${{ matrix.target }}
         env:
