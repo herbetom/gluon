@@ -22,6 +22,12 @@ on:
         description: 'Gluon autoupdater default branch'
         type: string
 
+env:
+  GLUON_AUTOUPDATER_ENABLED: ${{ inputs.autoupdater_enabled || vars.GLUON_AUTOUPDATER_ENABLED }}
+  GLUON_AUTOUPDATER_BRANCH: ${{ inputs.autoupdater_branch || vars.GLUON_AUTOUPDATER_BRANCH }}
+  GLUON_SITE_URL: ${{ inputs.site_url || vars.GLUON_SITE_URL }}
+  GLUON_SITE_BRANCH: ${{ inputs.site_branch || vars.GLUON_SITE_BRANCH }}
+
 permissions:
   contents: read
 
@@ -59,18 +65,12 @@ jobs:
 
       - name: Checkout Site
         run: contrib/actions/checkout-site.sh
-        env:
-          GLUON_SITE_URL: ${{ inputs.site_url || vars.GLUON_SITE_URL }}
-          GLUON_SITE_BRANCH: ${{ inputs.site_branch || vars.GLUON_SITE_BRANCH }}
 
       - name: Setup upterm session
         uses: lhotari/action-upterm@v1
 
       - name: Build
         run: contrib/actions/run-build.sh ${{ matrix.target }}
-        env:
-          GLUON_AUTOUPDATER_ENABLED: ${{ inputs.autoupdater_enabled || vars.GLUON_AUTOUPDATER_ENABLED }}
-          GLUON_AUTOUPDATER_BRANCH: ${{ inputs.autoupdater_branch || vars.GLUON_AUTOUPDATER_BRANCH }}
 
       - name: Archive build logs
         if: ${{ !cancelled() }}
