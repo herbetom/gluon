@@ -12,7 +12,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: gluon-build
+  IMAGE_NAME: ${{ github.repository }}-build
 
 jobs:
   build-and-push-image:
@@ -36,7 +36,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@62339db73c56dd749060f65a6ebb93a6e056b755
         with:
-          images: ${{ env.REGISTRY }}/freifunk-gluon/${{ env.IMAGE_NAME }}
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
       - name: Build and push Docker image
         uses: docker/build-push-action@fdf7f43ecf7c1a5c7afe936410233728a8c2d9c2
         with:
