@@ -21,9 +21,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - run: echo "workflow: ${{ github.workflow }}"
+      - run: echo "workflow: $workflow"
         env:
-          github.workflow: ${{ github.workflow }}
+          workflow: ${{ github.workflow }}
 
 #  echo_vars:
 #    runs-on: ubuntu-22.04
