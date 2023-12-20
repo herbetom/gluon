@@ -131,10 +131,3 @@ device('zte-mf289f', 'zte_mf289f', {
 -- ZyXEL
 
 device('zyxel-nbg6617', 'zyxel_nbg6617')
-
-
--- 8devices
-
-device('8devices-jalapeno', '8dev_jalapeno', {
-	factory_ext = '.ubi',
-})
