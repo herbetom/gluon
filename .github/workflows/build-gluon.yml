@@ -21,16 +21,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - run: echo "workflow: $workflow"
-        env:
-          workflow: ${{ github.workflow }}
+      - run: echo "github.run_id: ${{ github.run_id }}"
+#      - run: echo "workflow: $workflow"
+#        env:
+#          workflow: ${{ github.workflow }}
 
 #  echo_vars:
 #    runs-on: ubuntu-22.04
 #    steps:
 #      - run: echo "github.ref: ${{ github.ref }}"
 #      - run: echo "github.event.pull_request.number: ${{ github.event.pull_request.number }}"
-#      - run: echo "github.run_id: ${{ github.run_id }}"
 
   changed:
     permissions:
