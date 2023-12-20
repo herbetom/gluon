@@ -17,6 +17,12 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "github.ref: ${{ github.ref || github.run_id }}"
+      - run: echo "github.event.pull_request.number: ${{ github.event.pull_request.number || github.run_id }}"
+
   changed:
     permissions:
       contents: read  # for dorny/paths-filter to fetch a list of changed files
