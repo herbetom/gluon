@@ -17,11 +17,13 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  echo:
-    runs-on: ubuntu-latest
+  echo_vars:
+    runs-on: ubuntu-22.04
     steps:
-      - run: echo "github.ref: ${{ github.ref || github.run_id }}"
-      - run: echo "github.event.pull_request.number: ${{ github.event.pull_request.number || github.run_id }}"
+      - run: echo "github.workflow: ${{ github.workflow }}"
+      - run: echo "github.ref: ${{ github.ref }}"
+      - run: echo "github.event.pull_request.number: ${{ github.event.pull_request.number }}"
+      - run: echo "github.run_id: ${{ github.run_id }}"
 
   changed:
     permissions:
