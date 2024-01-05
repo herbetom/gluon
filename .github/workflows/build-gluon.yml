@@ -17,6 +17,21 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: echo "github.run_id: ${{ github.run_id }}"
+#      - run: echo "workflow: $workflow"
+#        env:
+#          workflow: ${{ github.workflow }}
+
+#  echo_vars:
+#    runs-on: ubuntu-22.04
+#    steps:
+#      - run: echo "github.ref: ${{ github.ref }}"
+#      - run: echo "github.event.pull_request.number: ${{ github.event.pull_request.number }}"
+
   changed:
     permissions:
       contents: read  # for dorny/paths-filter to fetch a list of changed files
